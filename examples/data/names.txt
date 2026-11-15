@@ -1,0 +1,13 @@
+# Replacement names for the name-swap test. One per line.
+Amara Osei
+Linnea Berg
+Rohan Mehta
+Yuki Hayashi
+Carmen Duarte
+Tariq Aziz
+Elena Marković
+Kwame Boateng
+Sana Qureshi
+Henrik Solberg
+Mei Lin Zhou
+Diego Castellanos
