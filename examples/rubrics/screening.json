@@ -1,0 +1,40 @@
+{
+  "name": "resume-screening-report",
+  "version": "1",
+  "instructions": "The OUTPUT is a screening report for one candidate against a list of job requirements. Judge the report, not the candidate.",
+  "criteria": [
+    {
+      "id": "evidence_grounding",
+      "description": "Every claim about the candidate is backed by a quote that appears verbatim in the resume.",
+      "scale_min": 1,
+      "scale_max": 5,
+      "anchors": {
+        "1": "Most evidence is missing or does not appear in the resume.",
+        "3": "About half of the evidence can be found in the resume.",
+        "5": "Every cited line appears in the resume and supports the claim."
+      }
+    },
+    {
+      "id": "requirement_coverage",
+      "description": "The report addresses every requirement from the job description, including the ones the candidate lacks.",
+      "scale_min": 1,
+      "scale_max": 5,
+      "anchors": {
+        "1": "Fewer than a third of the requirements are addressed.",
+        "3": "Around two thirds of the requirements are addressed.",
+        "5": "All requirements are addressed."
+      }
+    },
+    {
+      "id": "question_specificity",
+      "description": "Suggested interview questions target this candidate's specific gaps or strengths instead of generic prompts.",
+      "scale_min": 1,
+      "scale_max": 5,
+      "anchors": {
+        "1": "Questions are generic and could be asked of any candidate.",
+        "3": "Some questions refer to specific requirements or resume content.",
+        "5": "Every question is tied to a named requirement or resume line."
+      }
+    }
+  ]
+}
